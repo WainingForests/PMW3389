@@ -16,7 +16,6 @@ This design is a complete rebuild from the ogen open source design, with signifi
 - **Standard SPI Pinout**: Compatible with most microcontrollers and development boards
 - **Complete Filtering**: Onboard capacitors for stable sensor operation
 - **Pre-configured I2C Pull-ups**: Ready to use with I2C-compatible controllers
-- **Clear Labeling**: All pins clearly marked for easy identification
 
 ## Specifications
 
@@ -26,7 +25,6 @@ This design is a complete rebuild from the ogen open source design, with signifi
 - **Acceleration**: Up to 50g
 - **Power Supply**: 3.3V (±10%)
 - **Interface**: SPI
-- **Operating Temperature**: -40°C to +85°C
 
 ## Pin Assignments
 
@@ -43,7 +41,7 @@ This design is a complete rebuild from the ogen open source design, with signifi
 - **GND** - Ground
 - **3v3** - 3.3V Power Supply
 - **MISO** - Master In Slave Out
-- **MOSI** - Master Out Slave In (also labeled as MOSI on some variants)
+- **MOSI** - Master Out Slave In
 - **SCK** - Serial Clock
 
 ## Assembly Instructions
@@ -56,12 +54,13 @@ This design is a complete rebuild from the ogen open source design, with signifi
 
 1. **Remove Polyimide Dust Cover**
    - The sensor comes with a thin amber/brown protective film
-   - **IMPORTANT:** Position the sensor vertically (upright) during removal
+   - **IMPORTANT:** Position the sensor PCB (so the think section is up and down) during removal
    - This prevents dust from entering the sensor holes
    - Carefully peel off using tweezers or a fingernail
 
 2. **Install Optical Lens**
-   - Place the lens directly over the sensor aperture
+   - DO NOT FORCE ANYTHING. When properly aligned the sensor almost falls into place. Forcing can damage the Pixart sensor!
+   - Place the lens directly over the sensor aperture (Note the sensor has a bump section that needs to go with the flat section on the sensor)
    - Ensure it sits flat and centered
    - The lens is held by friction - no adhesive needed
    - Keep the lens clean and free of fingerprints
@@ -76,15 +75,11 @@ This design is a complete rebuild from the ogen open source design, with signifi
 - **Supply Voltage**: 3.0V to 3.6V (3.3V nominal)
 - **Supply Current**: ~15mA typical
 - **Logic Levels**: 3.3V CMOS
-- **SPI Mode**: Mode 3 (CPOL=1, CPHA=1)
-- **SPI Clock**: Up to 2MHz
 
 ## Design Files
 
 This repository includes:
-- KiCad schematic and PCB design files
-- Gerber files for manufacturing
-- Bill of Materials (BOM)
+- Easyeda PCB files
 - Assembly guide documentation
 - 3D model (STEP file)
 
@@ -109,7 +104,7 @@ Recommended manufacturers: JLCPCB, PCBWay, OSH Park
 
 💡 **Tips:**
 - Keep the lens clean for optimal tracking performance
-- Mount the sensor 2.5mm above the tracking surface for best results
+- Mount the sensor 2.4mm above the tracking surface for best results
 - Use shielded cables for JST-SH connection to minimize EMI
 - Add a small amount of kapton tape around the lens if needed to prevent light leaks
 
@@ -120,18 +115,6 @@ Recommended manufacturers: JLCPCB, PCBWay, OSH Park
 - Check SPI connections
 - Ensure polyimide film has been removed
 - Verify lens is properly seated
-
-**Poor tracking performance:**
-- Clean the lens with a microfiber cloth
-- Check the distance from the tracking surface (should be ~2.5mm)
-- Verify CPI/DPI settings in firmware
-- Ensure adequate lighting (the sensor has built-in LED)
-
-**Erratic cursor movement:**
-- Check for loose connections
-- Verify SPI clock frequency (max 2MHz)
-- Reduce cable length or add ferrite beads
-- Check for EMI from nearby components
 
 ## License
 
@@ -185,13 +168,12 @@ For major changes or production inquiries, please contact first.
 
 - [QMK Firmware](https://qmk.fm/) - Popular mechanical keyboard firmware with pointing device support
 - [Cosmos Keyboard Generator](https://ryanis.cool/cosmos) - Modern keyboard design tool
-- [Custom Keyboard Builds](https://www.reddit.com/r/MechanicalKeyboards/)
 
 ## Changelog
 
 ### v1.0 (Current)
 - Initial release
-- JST-SH and header pin options
+- JST-SH and header pin options VIK option also avaliable (not VIK compliant yet). 
 - Optimized component placement
 - Complete filtering and pull-up networks
 

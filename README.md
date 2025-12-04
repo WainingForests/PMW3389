@@ -7,7 +7,7 @@ This design is a complete rebuild from the ogen open source design, with signifi
 - Better filtering capacitors for improved stability and noise rejection
 - Optimized component placement for reliability
 
-![PMW3389 Breakout Board](3389_JST-SH.png)
+![PMW3389 Breakout Board](3389-JST-SH.png)
 
 ## Features
 

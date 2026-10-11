@@ -122,11 +122,10 @@ This hardware design is licensed under the CERN Open Hardware Licence Version 2 
 
 **Key Requirements:**
 - Attribution is required
-- Non-commercial use encouraged
-- **Production requires permission** - Please contact for licensing if you wish to manufacture these boards
+- Making and selling boards is allowed
 - Modifications must be shared under the same license
 
-See [LICENSE](LICENSE) for full details.
+See [LICENSE](LICENSE.md) for full details.
 
 ## Upcoming: Precision Trackball Mount
 
@@ -155,7 +154,7 @@ Contributions are welcome! Please feel free to submit:
 - Pull requests for improvements
 - Documentation updates
 
-For major changes or production inquiries, please contact first.
+For major changes, please open an issue first.
 
 ## Credits
 
@@ -179,4 +178,4 @@ For major changes or production inquiries, please contact first.
 
 ---
 
-**Note**: This is an open-source hardware project with attribution and share-alike requirements. PCB files and documentation are provided under the CERN-OHL-S v2 license. Production for commercial purposes requires permission from the designer.
+**Note**: This is an open-source hardware project with attribution and share-alike requirements. PCB files and documentation are provided under the CERN-OHL-S v2 license. You're free to make and sell boards from this design; if you modify it, share your modified design files under the same licence.
